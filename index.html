@@ -149,7 +149,7 @@
                         </li>
                     </ul>
                     <div class="lang">
-                        <p class="lang-1">Boostrap</p>
+                        <p class="lang-1">Bootstrap</p>
                         <p class="lang-1">React</p>
                         <p class="lang-1">MongoDB</p>
                         <!-- <p class="lang-1">HTML5</p>
@@ -210,28 +210,6 @@
                 </div>
             </div>
 
-            <!-- <div class="box">
-                <img src="img/paymt.png" alt="">
-                <div class="content">
-                    <h3><b>Lorem, ipsum dolor.</b></h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic!
-                    </p>
-                        <a href="https://payment-gateway-anirudha.netlify.app/" target="_blank" class="btn"><i class="fa-solid fa-link"></i>Visit</a>
-                        <a href="https://github.com/Anirudha06/Payment_Gateway_integration" target="_blank" class="btn"><i class="fa-brands fa-github"></i>Github</a>
-                    
-                </div>
-            </div>
-            <div class="box">
-                <img src="img/paymt.png" alt="">
-                <div class="content">
-                    <h3><b>Lorem, ipsum dolor.</b></h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic!
-                    </p>
-                        <a href="https://payment-gateway-anirudha.netlify.app/" target="_blank" class="btn"><i class="fa-solid fa-link"></i>Visit</a>
-                        <a href="https://github.com/Anirudha06/Payment_Gateway_integration" target="_blank" class="btn"><i class="fa-brands fa-github"></i>Github</a>
-                    
-                </div>
-            </div> -->
 
 
 
@@ -251,13 +229,14 @@
         </h1>
         <div class="row">
 
-            <form onsubmit="sendEmail()"; reset(); >
+            <!-- <form onsubmit="sendEmail(event)"; reset(); > -->
+            <form action="https://formspree.io/f/xrgdqega"  method="post" >
                 <center>
                     <div class="inputBox">
-                        <input type="text" placeholder="Name" name="name" id="name">
-                        <input type="email" placeholder="Email" name="email" id="email">
-                        <input type="text" placeholder="Phone No" name="number" id="number">
-                        <input type="text" placeholder="City" name="city" id="city">
+                        <input type="text" placeholder="Name" name="Name" id="name">
+                        <input type="email" placeholder="Email" name="Email" id="email">
+                        <input type="text" placeholder="Phone No" name="Number" id="number">
+                        <input type="text" placeholder="City" name="City" id="city">
                         <center>
                             <textarea placeholder="Message" name="message" id="message"></textarea>
                         </center>
@@ -298,23 +277,23 @@
 
     <!--Javascript-->
     <script src="script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail(event) {
             event.preventDefault();
             Email.send({
                 Host: "smtp.elasticemail.com",
-                Username: "anirudhankamath@gmail.com",
-                Password: "337C906ADA139A181163118F6CAA23794F5A",
+                Username: "anirudhankamath@yopmail.com",
+                Password: "665E51A96AC2536C0C203C17FF230887E1FF",
                 To: 'anirudhankamath@gmail.com',
                 From: document.getElementById('email').value,
                 Subject: "Portfolio Contact Form",
                 Body: document.getElementById('message').value,
             }).then(
-                message => alert(message)
+                message => alert("Email is sent")
             );
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
