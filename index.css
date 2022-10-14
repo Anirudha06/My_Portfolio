@@ -232,8 +232,8 @@ header .search-bar-container label:hover {
   z-index: 0;
 }
 .home img {
-  height: 400px;
-  width: 350px;
+  height: 480px;
+  width: 355px;
   border: 5px solid var(--orange);
   border-radius: 30px;
   margin-top: 70px;
